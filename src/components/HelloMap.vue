@@ -1,3 +1,4 @@
+<!-- openlayers 二维地图测试  -->
 <template>
   <div>
     <div id="map" style="position: absolute; width: 100%; height: 100%;"></div>

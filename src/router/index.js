@@ -5,6 +5,7 @@ import HelloMap2 from '@/components/HelloMap2'
 import DoParent from '@/components/DoParent'
 import ApplyPopup from '@/components/ApplyPopup'
 import ModelRotation from '@/components/ModelRotation'
+import MapOperation from '@/components/MapOperation'
 
 Vue.use(Router)
 
@@ -12,7 +13,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: "/modelrotation"
+      redirect: "/mapoperation"
+    },
+    {
+      path: '/mapoperation',
+      name: 'MapOperation',
+      component: MapOperation
     },
     {
       path: '/applypopup',

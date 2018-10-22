@@ -1,3 +1,4 @@
+<!-- cesium 弹出框例子 -->
 <template>
   <div>
     <div id="cesiumer" style="position: absolute; width: 100%; height: 100%;"></div>
