@@ -26,7 +26,7 @@ const Hnadler = {
 
 export default {
     /**
-     * 获取视图场景范围
+     * 获取视图场景范围，更简单的通过camera.computeViewRectangle(Cesium.Ellipsoid.WGS84, result) 获得
      * @param {*} viewer 
      * @return Object {
      *      minLon: 最小经度值（单位：度数）,

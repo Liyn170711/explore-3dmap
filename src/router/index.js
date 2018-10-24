@@ -6,6 +6,7 @@ import DoParent from '@/components/DoParent'
 import ApplyPopup from '@/components/ApplyPopup'
 import ModelRotation from '@/components/ModelRotation'
 import MapOperation from '@/components/MapOperation'
+import TrackSearch from '@/cases/track/TrackSearch'
 
 Vue.use(Router)
 
@@ -13,7 +14,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: "/mapoperation"
+      redirect: "/tracksearch"
+    },
+    {
+      path: '/tracksearch',
+      name: 'TrackSearch',
+      component: TrackSearch
     },
     {
       path: '/mapoperation',
