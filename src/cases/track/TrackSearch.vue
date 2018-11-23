@@ -27,7 +27,7 @@ export default {
     ...mapState({
           showTrack: ({ trackSearch }) => trackSearch.showTrack, // 显示绘制轨迹
           degreesArrayHeights: ({ trackSearch }) => trackSearch.degreesArrayHeights, // 轨迹绘制测试数据
-      })
+    })
   },
   watch: {
     showTrack (newVal, oldVal) { // 监听轨迹是否显示

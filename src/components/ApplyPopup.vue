@@ -2,7 +2,7 @@
 <template>
   <div>
     <div id="cesiumer" style="position: absolute; width: 100%; height: 100%;"></div>
-    <popup v-show="popupShow" :popupData="popupData" @closePopup="closePopup" height="130"></popup>
+    <popup v-show="popupShow" :popupData="popupData" @closePopup="closePopup"></popup>
   </div>
 </template>
 
@@ -121,9 +121,9 @@ export default {
             if (id instanceof Cesium.Entity) {
                 // console.log('实体位置：',cartesian3Co.toString());
                 this.selectedEntity = id; // 设置选择的实体
-                this.slectedEntityCo = cartesian3Co; // 设置选择的实体的Cartesian3坐标
                 this.popupShow = true;   
                 var cartesian3Co = id.position.getValue(Cesium.JulianDate.now());
+                this.slectedEntityCo = cartesian3Co; // 设置选择的实体的Cartesian3坐标
                 var ellipsoid = this.viewer.scene.globe.ellipsoid;
                 var cartographic = ellipsoid.cartesianToCartographic(cartesian3Co);
                 var lat = Cesium.Math.toDegrees(cartographic.latitude); // 纬度

@@ -24,13 +24,13 @@ export default {
         type: Object
     },
     width: {
-        type: Number,
-        default: 200
+        type: String,
+        default: 'auto'
 
     },
     height: {
-        type: Number,
-        default: 100
+        type: String,
+        default: 'auto'
 
     }
   },
@@ -44,10 +44,10 @@ export default {
       popupStyle () {
         var style = {};
         if (this.width) {
-            style.width = this.width + "px";
+            style.width = this.width;
         }
         if (this.height) {
-            style.height = this.height + "px";
+            style.height = this.height;
         }
         return style;
       }
@@ -65,7 +65,7 @@ export default {
   mounted () { // 组件挂载完成处理函数
     this.popuper = this.$el.children[0];
     if (this.popupData && this.popupData.screenCo) { // 有位置数据时
-        this.popUpPosition(screenCo); // 移动弹出框的位置
+        this.popUpPosition(this.popupData.screenCo); // 移动弹出框的位置
     }
   },
   methods: {
