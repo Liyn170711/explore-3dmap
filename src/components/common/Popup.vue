@@ -88,9 +88,9 @@ export default {
 .popup {
     position: absolute;
     background: #88b7d5;
-    border: 2px solid #c2e1f5;
+    border: 1px solid #c2e1f5;
     padding: 0;
-    border-radius: 6px;
+    border-radius: 5px;
 }
 /* 气泡容器渲染前后的公用样式 */
 .popup:after, .popup:before {
@@ -107,15 +107,15 @@ export default {
 .popup:after {
 	border-color: rgba(136, 183, 213, 0);
 	border-top-color: #88b7d5;
-	border-width: 12px;
-	margin-left: -12px;
+	border-width: 11px;
+	margin-left: -11px;
 }
 /* 气泡容器渲染前的样式 */
 .popup:before {
 	border-color: rgba(194, 225, 245, 0);
 	border-top-color: #c2e1f5;
-	border-width: 15px;
-	margin-left: -15px;
+	border-width: 12px;
+	margin-left: -12px;
 }
 /* 气泡顶部的样式 */
 .popup_top {

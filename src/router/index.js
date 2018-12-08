@@ -14,7 +14,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: "/tracksearch"
+      redirect: "/applypopup"
     },
     {
       path: '/tracksearch',

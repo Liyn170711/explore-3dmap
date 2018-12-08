@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import 'cesium/Widgets/widgets.css'
-import Cesium from 'cesium/Cesium'
 
 export default {
   name: 'MapOperation',
@@ -28,7 +26,7 @@ export default {
       infoBox: false, // 不显示消息框
       selectionIndicator: false,// 不显示选择指示器
     });
-    // this.viewer.extend(Cesium.viewerCesiumNavigationMixin, {enableZoomControls: false});
+    this.viewer.extend(Cesium.viewerCesiumNavigationMixin, {enableZoomControls: false});
   }
 }
 </script>
